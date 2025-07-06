@@ -92,6 +92,15 @@
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
+
+      var resizeSlide = function() {
+        Reveal.configure({
+          width: window.innerWidth,
+          height: window.innerHeight
+      });
+    }
+
+    setInterval(resizeSlide, 1000);
     </script>
   </body>
 </html>
