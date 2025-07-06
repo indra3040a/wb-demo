@@ -67,3 +67,22 @@ table tr td, table tr th{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.sec-head-1 img {
+    max-height: 360px;
+}
+
+.sec-bottom {
+    
+    z-index: 1;
+    position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+}
+
+.sec-bottom p {
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+}
