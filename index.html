@@ -82,15 +82,21 @@
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
+        width: "100%",
+        height: "100%",
+        margin: 0.1,
+        minScale: 0.2,
+        maxScale: 1,
         hash: true,
         transition: "convex", // default 'slide'
         transitionSpeed: "slow", // slow down slide transitions
         controlsTutorial: false, // turn off arrow bumping
-        controlsLayout: "edges", // default 'bottom-right'
+        controlsLayout: "middle", // default 'bottom-right'
         controlsBackArrows: "visible", // make previous slide arrow bright instead of faded
         progress: false, // turn off progress bar display
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        touch: true
       });
 
       var resizeSlide = function() {
